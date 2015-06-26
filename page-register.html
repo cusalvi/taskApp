@@ -47,7 +47,7 @@
     <div class="control-group">
       <div class="controls">
         <button class="btn btn-info" ng-click="login()">Back to Login</button>
-        <button type="submit" class="btn btn-success">Register</button>
+        <button type="submit" class="btn btn-success" ng-disabled="userForm.$invalid">Register</button>
       </div>
     </div>
   </fieldset>
