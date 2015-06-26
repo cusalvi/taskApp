@@ -1,0 +1,32 @@
+<div class="container well todo" ng-init="load()">    
+    <div class="row">
+        <div class="col-md-6">
+            <h3>To Do List</h3>
+        </div>
+        <div class="col-md-6">
+            <p ng-model="username">{{username}}</p>
+            <p class="logout"><a ng-click="logout()"><i class="btn btn-danger fa fa-sign-out">Logout</i></a></p>
+        </div>
+    </div>
+    <div class="inputbar">
+        <input type="text" id="addtodo" class="formcontrol" placeholder="Add Task and hit Enter" ng-keypress="add($event)" ng-model="addtodo" focus>
+    </div>
+    <table class="table table-stripped table-bordered">
+        <tr ng-repeat="item in todoList" >
+            <td>
+                <label ng-class="{'todocompleted':item.completed}">
+                    <input type="checkbox"  ng-show="val" ng-model="item.completed" ng-click="checkStrike(item,item.completed)">
+                    <span ng-show="val" >{{item.title|uppercase}}</span>
+                    <input type="text" class="upper" ng-hide="val" value="item.title" ng-keypress="todoEdit($event,item)" ng-model="item.title">
+                </label>
+            </td>
+            <td>
+                <div class="btn-group pull-right" role="group">  
+                    <button class="btn btn-danger glyphicon glyphicon-trash pull-right" ng-class='{disabled:!item.completed}' ng-click="removeTodo(item)"><i class="fa fa-trash-o"></i></button>
+                    <button class="btn btn-primary glyphicon glyphicon-pencil pull-right" ng-class='{disabled:item.completed}' ng-click="edit(item.title)"></button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="footer">{{remaining}} task(s) remaining.</div>
+</div>

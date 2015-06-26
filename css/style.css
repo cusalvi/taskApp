@@ -1,0 +1,153 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400);*/
+/* BASE STYLES
+============================================================================= */
+/*html         { overflow-y:hidden; }*/
+/*.page        { 
+    bottom:0; 
+    padding-top:200px;
+    position:absolute; 
+    text-align:center;
+    top:0;  
+    width:100%; 
+}*/
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+body {
+    background-color:#fff;
+    -webkit-font-smoothing: antialiased;
+    font: normal 14px Roboto,arial,sans-serif;
+}
+.page      { 
+    bottom:0; 
+    padding-top: 40px;
+    position:absolute; 
+    top:0;  
+    width:100%;
+    height: 100%;
+}
+.page.page-todo      { 
+    bottom:0; 
+    padding-top: 10px;
+}
+
+.page h1    { font-size:60px; }
+.page a     { margin-top:10px; }
+#product      { color:#333; position:absolute; text-align:center; top:50px; width:100%; }
+
+.page-todo p     { text-align: right; margin: 0 20px 0 0;}
+/* PAGES
+============================================================================= */
+.page-register {
+    background:#F0FFFF;
+}
+.page-login {
+    background-image: url(../images/black-and-white-apple-iphone-smartphone.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.page-todo  {
+    background-image: url(../images/brownwood_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    overflow-y: scroll;
+}
+/*.page-todo   { background:#F0FFFF; color:#000088; }*/
+.heading {
+    text-align: center;
+    color: #2D1B9B;
+    font-weight: bold;
+}
+.login {
+    /*margin: 0 auto;*/
+    position: relative;
+    top: 10%;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+div.form-login {
+    background-color: #A7AD9B;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+h3 { 
+ text-align: left;
+ color: black;
+}
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+.inputbar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+#addtodo {
+    width: 30%;
+}
+
+.wrapper {
+    text-align: center;
+}
+.todo {
+    background: rgba(229, 229, 229, 0.96);
+    margin: 0 10% 5% 12%;
+    padding: 25px;
+    position: absolute;
+    top: 10%;
+}
+.todocompleted
+{
+    width: 100%;
+}
+table
+{
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 1px 10px 5px #fff;
+    
+    border-radius: 10px;
+}
+tr {
+    text-align: left;
+}
+td
+{
+    padding: 5%;
+}
+span
+{
+    font-size: 1.1em;
+}
+.register-form {
+    text-align: center;
+}
+
+p.logout {
+    margin: 5px 20px 0 0;
+}
+
+.footer {
+    text-align: center;
+}
